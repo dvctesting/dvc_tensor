@@ -10,7 +10,7 @@ useless = ["info_gew","info_resul","id","date"] # features that we expect are un
 drop_list = names + useless 
 
 # Remove the questionnaire about agricultural practices until I can better understand it
-practice_list = ["legum","conc","add","lact","breed","covman","comp","drag","cov","plow","solar","biog","ecodr"]
+practice_list = ["legum","conc","add","lact","breed","covman","cov","plow","solar","biog","ecodr"]
 for feat in all_features:
     if any(x in feat for x in practice_list):
         drop_list.append(feat)
