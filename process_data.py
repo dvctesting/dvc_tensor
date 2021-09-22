@@ -6,7 +6,7 @@ all_features = df.columns
 
 # Let's drop some features
 names = [feat for feat in all_features if "net_name" in feat] # excluded for privacy reasons
-useless = ["info_gew","info_resul","interviewtime","id","date"] # features that we expect are uninformative
+useless = ["info_gew","info_resul","id","date"] # features that we expect are uninformative
 drop_list = names + useless 
 
 # Remove the questionnaire about agricultural practices until I can better understand it
